@@ -1,0 +1,42 @@
+.grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+}
+
+.node {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.node.start {
+    background-color: green; /* Warna untuk node awal */
+}
+
+.node.end {
+    background-color: red; /* Warna untuk node akhir */
+}
+
+.node.blocked {
+    background-color: rgb(255, 255, 255); /* Warna untuk node yang terhalang */
+}
+
+.node.path {
+    background-color: yellow; /* Warna untuk jalur terpendek */
+}
+
+.visited {
+    background-color: rgb(0, 0, 255);
+}
+
+.path {
+    background-color: yellow;
+}
